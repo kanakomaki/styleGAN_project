@@ -45,10 +45,10 @@ def vectorization(df_new):
     
     return ds, tfidf_matrix, vec_tfidf
 
-def text_audience_input(query, ds, tfidf_matrix, vec_tfidf):
+def text_audience_input(ds, tfidf_matrix, vec_tfidf):
     
     # Input a query from audience <-- Streamlit input
-#    query = 'A young man with blond hair, mustache, a big nose, eyeglasses'
+    query = 'A young man with blond hair, mustache, a big nose, eyeglasses'
     print(f"The input text is {query}")
 
     query_preprocessed = np.array([text2image.preprocessing(query)])
@@ -80,7 +80,7 @@ def show_pics(df_new, index_highsimilarity):
     # A path to the directory to save selected pictures
     path_save = "./data/save/"
 
-    for i in range(1): # change the top N 
+    for i in range(5):
         print(i)
         img_filename = df_new.iloc[index_highsimilarity[i]].image_id
         filename = path + img_filename
@@ -90,7 +90,7 @@ def show_pics(df_new, index_highsimilarity):
         plt.imshow(img)
         img.save(f"{path_save}matched_{img_filename}.png", format='PNG')
         plt.show()
-    return filename
+    pass
 
 
 #df_new = load_data()
