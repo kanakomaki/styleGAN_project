@@ -1,0 +1,10 @@
+setup.py
+text2image/__init__.py
+text2image/preprocess.py
+text2image/process.py
+text2image.egg-info/PKG-INFO
+text2image.egg-info/SOURCES.txt
+text2image.egg-info/dependency_links.txt
+text2image.egg-info/not-zip-safe
+text2image.egg-info/requires.txt
+text2image.egg-info/top_level.txt
