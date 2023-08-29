@@ -6,4 +6,5 @@ google-cloud-storage
 scikit-learn==1.3.0
 Pillow==10.0.0
 nltk==3.8.1
+text2image
 
