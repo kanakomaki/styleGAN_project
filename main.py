@@ -1,5 +1,8 @@
 from text2image import preprocess, process
-#import text2image
+import nltk
+nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("wordnet")
 
 
 # input user_query
