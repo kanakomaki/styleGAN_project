@@ -2,8 +2,11 @@
 
 This is a prototype version 
 
-# setup command
-pip install ./text2image
+# setup command 
+## install in development mode
+pip install -e .
+## install in production mode
+pip install .
 
 # run command
 python main.py
@@ -15,4 +18,4 @@ python main.py
 ## goto data/save/ directory
 
 
-lastupdated 2023 Aug 28
+### lastupdated 2023 Aug 29
