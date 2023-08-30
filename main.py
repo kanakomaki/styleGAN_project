@@ -8,8 +8,8 @@ nltk.download("wordnet")
 # input user_query
 
 #user_query ='A young man with blond hair, mustache, a big nose, eyeglasses'
-#user_query ='Young female with wavy hair, blond hair and arched eyebrows'
-#user_query = 'blond female'
+#user_query = 'A young male, bald, wavy hair, attractive'
+user_query = 'An attractive young female, wavy hair, blond hair, no beard, bangs, earrings, lipsticks'
 
 def main(user_query):
     df_new = process.load_data()
@@ -21,4 +21,4 @@ def main(user_query):
     return path_to_savedimages
 
 if __name__ == '__main__':
-    main()
+    main(user_query)
