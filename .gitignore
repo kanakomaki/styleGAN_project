@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 # this is specific packages for stylegan project
-data/
+#data/
