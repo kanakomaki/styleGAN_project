@@ -2,10 +2,12 @@
 # Documentation of App "AIdentikit" 
 ## The app can generate face images from text inputs describing the face features.
 
+Demo Presentation Slide
 ![Demo presentation](./images/presentation1.png "Demo presentation")
 
+Webpage(Home)
 ![app image](./images/app_image1.png "app front page")
-
+Webpage(Demo)
 ![app image](./images/app_image2.png "app demo page")
 
 
