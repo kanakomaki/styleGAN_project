@@ -1,6 +1,11 @@
-# Readme
+# Readme lat update 2023.Sep.6
+# Description of App "AIdentikit"
 
-This is a prototype version 
+![Demo presentation](./images/presentation1.png "Demo presentation")
+
+![app image](./images/app_image1.png "app front page")
+
+![app image](./images/app_image2.png "app demo page")
 
 # setup command 
 ## install in development mode
