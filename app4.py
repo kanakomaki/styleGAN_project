@@ -1,39 +1,15 @@
 import streamlit as st
 from PIL import Image
 import os
-#import numpy as np
-#import pandas as pd
 import re
 from style_clip import style_clip, image_generator, save_image
 from main import main
-#from google.cloud import storage
-
-# from dataset_select import dataset_select
-# from generator import image_generator
-# from request_image import request_image
-# import style_clip
-
-#os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'stylegan-project-396702-74a628ba4c56.json'
-# export GOOGLE_APPLICATION_CREDENTIALS=stylegan-project-396702-74a628ba4c56.json
-
-
-# bucket_name = 'raw-data-align-celeba'
-# path = 'styleGAN_project/img_align_celeba/000019.jpg'
 
 
 
 # Paths - NOTE: CHANGE TO GCP
 ##########################################################################################################################
-# original_path = 'gs://raw-data-align-celeba/styleGAN_project/img_align_celeba/000019.jpg'
-# #output_path = '/Users/lucaskawasaki/Desktop/Project/replicate/generated/'
 output_path = './'
-##########################################################################################################################
-
-
-# Paths - NOTE: CHANGE TO GCP
-##########################################################################################################################
-# original_path = '/Users/lucaskawasaki/Desktop/Project/replicate/original/000019.jpg'
-# output_path = '/Users/lucaskawasaki/Desktop/Project/replicate/generated/'
 ##########################################################################################################################
 
 # Images paths
@@ -113,10 +89,7 @@ def main2():
         text_input1 = st.text_input("Describe the features of a person you are looking for:",key='placeholder')
         upload_image = st.button('Upload image', on_click=click_upload_button)
 
-        # A young man with blond hair, mustache, a big nose, eyeglasses
-        #
-
-        text_input2 = st.text_input("Enter the feature you want to change:") #disabled=st.session_state.disabled)
+        text_input2 = st.text_input("Enter the feature you want to change:")
         generate_image = st.button('Generate images', on_click=click_generate_button)
     ##########################################################################################################################
 
@@ -140,14 +113,6 @@ def main2():
 
         if text_input1 and st.session_state.upload_clicked:
 
-            # gcp
-            # client = storage.Client()
-            # bucket = client.get_bucket(bucket_name)
-            # blob = bucket.blob(path)
-            # st.session_state.original_image = '0.0.jpg'
-            # blob.download_to_filename(st.session_state.original_image)
-
-            #st.session_state.original_test = main(text_input1)
             st.session_state.original_test = main(text_input1)
             #print(st.session_state.original_test)
 
