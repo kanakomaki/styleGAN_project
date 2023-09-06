@@ -22,17 +22,12 @@ def catch_images_name(output_path):
 
 # Page setup
 ##########################################################################################################################
-#st.set_page_config(layout="wide")
 st.set_page_config(layout="wide")
 
 # Background color
 page_bg_img= """<style> [data-testid=stAppViewContainer] {background-color:#FFFFFF;
                 opacity:0.8; margin-top: -130px} </style> """
 st.markdown(page_bg_img, unsafe_allow_html=True)
-#e5e5f7
-#d4e4dc
-#FFFFFF
-
 
 
 
@@ -107,12 +102,6 @@ css = '''
 st.markdown(css, unsafe_allow_html=True)
 
 
-
-
-
-
-
-
 # Main function
 ##########################################################
 def main2():
@@ -140,23 +129,9 @@ def main2():
                     """, unsafe_allow_html=True)
 
         st.image("./images/logo-ai-2.png", width=500)
-        #st.markdown("<h1 style='text-align: center; color: black;'>Welcome to AIdentikit</h1>", unsafe_allow_html=True)
-        #st.markdown("<h5 style='text-align: center; color: black;'>An identikit or an identikit picture is a drawing of the face of someone the police want to question. It is made from descriptions given to them by witnesses to a crime.</h5>", unsafe_allow_html=True)
         st.markdown("<h5 style='text-align: center; color: black;'>An identikit or an identikit picture is a drawing of the face of someone the police want to question.</h5>", unsafe_allow_html=True)
         st.markdown("<h5 style='text-align: center; color: black;'>It is made from descriptions given to them by witnesses to a crime.</h5>", unsafe_allow_html=True)
     #############################
-
-# Features to search a image:
-#     5oClock Shadow, male, pale skin, young
-
-# Features to change image:
-#forehead
-#beard
-#wrinkle
-#more beard
-#glasses
-
-
 
 
     # Demo page
@@ -167,20 +142,13 @@ def main2():
         with st.container():
             col1, col2 = st.columns(2)
             with col1:
-                #st.markdown("""<style>.big-font {font-size:30px !important;}</style>""", unsafe_allow_html=True)
-                #st.markdown('<p class="big-font">Input image</p>', unsafe_allow_html=True)
-                #text_input1 = st.text_input("Describe",key='placeholder')
                 st.markdown("<h3 style='color: black;'>Describe the features of a person you are looking for:</h3>", unsafe_allow_html=True)
                 text_input1 = st.text_input("Describe the features of a person you are looking for:", label_visibility='collapsed')
                 st.button('Search image', on_click=click_upload_button)
 
             with col2:
-                #st.markdown("""<style>.big-font {font-size:30px !important;}</style>""", unsafe_allow_html=True)
-                #st.markdown('<p class="big-font">Output image</p>', unsafe_allow_html=True)
-                #text_input2 = st.text_input("Enter",key='placeholder')
                 st.markdown("<h3 style='color: black;'>Enter the feature you want to change:</h3>", unsafe_allow_html=True)
-                text_input2 = st.text_input("Enter the feature you want to change:", label_visibility='collapsed') #disabled=st.session_state.disabled)
-                #text_input2 = st.text_input("Enter the feature you want to change:") #disabled=st.session_state.disabled)
+                text_input2 = st.text_input("Enter the feature you want to change:", label_visibility='collapsed')
                 st.button('Modify image', on_click=click_generate_button)
 
         ##########################################################################################################################
@@ -204,7 +172,6 @@ def main2():
                 with col1:
                     image1 = Image.open('0.0.jpg') # return from previous part
                     disabled=st.session_state
-                    #st.image(image1, use_column_width=True)
                     st.image(image1, width=500)
                     with open('0.0.jpg', "rb") as file:
                         st.download_button(label="Download", data=file,
@@ -226,10 +193,7 @@ def main2():
                 #############################################################
                 with col2:
                     st.session_state.image2 = Image.open('4.5.jpg')
-                    #st.image(st.session_state.image2, use_column_width=True)
                     st.image(st.session_state.image2, width=500)
-                    #st.markdown("""<style>.big-font {font-size:30px !important;}</style>""", unsafe_allow_html=True)
-                    #st.markdown("<h3 style='color: black;'>Do you like this image?</h3>", unsafe_allow_html=True)
                     st.button('Change more features', on_click=click_accept_button)
 
             unclick_upload_button()
@@ -263,34 +227,15 @@ def main2():
 
                 st.image("./images/shiori.jpeg", width=200)
                 st.markdown("<h3 style='color: black;'>Shiori Miwa</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>Manager</h3>", unsafe_allow_html=True)
             with col2:
                 st.image("./images/kanae.jpeg", width=200)
                 st.markdown("<h3 style='color: black;'>Kanae Komaki</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>NLP Model</h3>", unsafe_allow_html=True)
             with col3:
                 st.image("./images/koga.jpg", width=200)
                 st.markdown("<h3 style='color: black;'>Koga Takahashi</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>Shiori Miwa</h3>", unsafe_allow_html=True)
             with col4:
                 st.image("./images/lucas.jpg", width=200)
                 st.markdown("<h3 style='color: black;'>Lucas Kawasaki</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>Machine Learning</h3>", unsafe_allow_html=True)
-
-        # with st.container():
-        #     col1, col2, col3, col4 = st.columns(4)
-        #     with col1:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
-        #     with col2:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
-        #     with col3:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
-        #     with col4:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
 
 if __name__ == "__main__":
     main2()
