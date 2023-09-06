@@ -22,18 +22,12 @@ def catch_images_name(output_path):
 
 # Page setup
 ##########################################################################################################################
-#st.set_page_config(layout="wide")
 st.set_page_config(layout="wide")
 
 # Background color
 page_bg_img= """<style> [data-testid=stAppViewContainer] {background-color:#FFFFFF;
                 opacity:0.8; margin-top: -130px} </style> """
 st.markdown(page_bg_img, unsafe_allow_html=True)
-#e5e5f7
-#d4e4dc
-#FFFFFF
-
-
 
 
 # Button behavior setup
@@ -105,12 +99,6 @@ css = '''
 '''
 
 st.markdown(css, unsafe_allow_html=True)
-
-
-
-
-
-
 
 
 # Main function
@@ -210,10 +198,7 @@ def main2():
                 #############################################################
                 with col2:
                     st.session_state.image2 = Image.open('4.5.jpg')
-                    #st.image(st.session_state.image2, use_column_width=True)
                     st.image(st.session_state.image2, width=500)
-                    #st.markdown("""<style>.big-font {font-size:30px !important;}</style>""", unsafe_allow_html=True)
-                    #st.markdown("<h3 style='color: black;'>Do you like this image?</h3>", unsafe_allow_html=True)
                     st.button('Change more features', on_click=click_accept_button)
 
             unclick_upload_button()
@@ -247,34 +232,16 @@ def main2():
 
                 st.image("./images/shiori.jpeg", width=200)
                 st.markdown("<h3 style='color: black;'>Shiori Miwa</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>Manager</h3>", unsafe_allow_html=True)
             with col2:
                 st.image("./images/kanae.jpeg", width=200)
                 st.markdown("<h3 style='color: black;'>Kanae Komaki</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>NLP Model</h3>", unsafe_allow_html=True)
             with col3:
                 st.image("./images/koga.jpg", width=200)
                 st.markdown("<h3 style='color: black;'>Koga Takahashi</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>Shiori Miwa</h3>", unsafe_allow_html=True)
             with col4:
                 st.image("./images/lucas.jpg", width=200)
                 st.markdown("<h3 style='color: black;'>Lucas Kawasaki</h3>", unsafe_allow_html=True)
-                #st.markdown("<h3 style='color: black;'>Machine Learning</h3>", unsafe_allow_html=True)
 
-        # with st.container():
-        #     col1, col2, col3, col4 = st.columns(4)
-        #     with col1:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
-        #     with col2:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
-        #     with col3:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
-        #     with col4:
-        #         logos = ['/Users/lucaskawasaki/Desktop/Logos/LI-In-Bug.png', '/Users/lucaskawasaki/Desktop/Logos/Wantedly_Mark_LightBG.png', '/Users/lucaskawasaki/Desktop/Logos/github-mark.png']
-        #         st.image(logos, width=40)
 
 if __name__ == "__main__":
     main2()
