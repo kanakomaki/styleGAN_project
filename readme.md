@@ -1,11 +1,7 @@
 ### Readme last update 2023.Sep.6
 # Documentation of App "AIdentikit" 
 ## The app can generate face images from text inputs describing the face features.
-
-Demo Presentation Slide
-![Demo presentation](./images/presentation1.png "Demo presentation")
-
-## This "Aidentitykit", firstly, selects the best-fit face image with input text keywords from the big database of the "CelebA dataset" (https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The CelebA dataset contains ~200K face images of celebrities in the world. 
+This "Aidentitykit", firstly, selects the best-fit face image with input text keywords from the big database of the "CelebA dataset" (https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The CelebA dataset contains ~200K face images of celebrities in the world. 
 Then, Aidentitykit arranges the picked-up face image with a feature that is input as a further text keyword and generates a new face image. You can continue to arrange the image as much as you want.
 
 @inproceedings{liu2015faceattributes,
@@ -14,6 +10,9 @@ Then, Aidentitykit arranges the picked-up face image with a feature that is inpu
   booktitle = {Proceedings of International Conference on Computer Vision (ICCV)},
   month = {December},
   year = {2015} 
+
+Demo Presentation Slide
+![Demo presentation](./images/presentation1.png "Demo presentation")
 
 Webpage(Home)
 ![app image](./images/app_image1.png "app front page")
