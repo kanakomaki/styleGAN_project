@@ -1,7 +1,7 @@
 README last update 2023.Sep.13
 # Documentation of App "AIdentikit" 
 ### The app can generate face images from text inputs describing the face features.
-This "Aidentitykit", firstly, selects the best-fit face image with input text keywords from the big database of the "CelebA dataset" (https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The CelebA dataset contains ~200K face images of celebrities in the world. 
+This "Aidentitykit", first, selects the best-fit face image with input text keywords from the big database of the "CelebA dataset" (https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The CelebA dataset contains ~200K face images of celebrities in the world. 
 Then, Aidentitykit arranges the picked-up face image with a feature that is input as a further text keyword and generates a new face image. You can continue to arrange the image as much as you want.
 
 Demo Presentation Slide
@@ -35,6 +35,7 @@ you need to modify "input text" in "process.py"
 goto data/save/ directory
 
 # Modification history
+- 2023 Sep 13: Modified README
 - 2023 Sep 06: updated py files and Readme.md
 - 2023 Aug 30: added a vocabulary dict option in Tfidifvectorization
 -            : changed ngram_range(1,2) --> (1,3)
