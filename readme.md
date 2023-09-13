@@ -4,13 +4,6 @@ README last update 2023.Sep.13
 This "Aidentitykit", firstly, selects the best-fit face image with input text keywords from the big database of the "CelebA dataset" (https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The CelebA dataset contains ~200K face images of celebrities in the world. 
 Then, Aidentitykit arranges the picked-up face image with a feature that is input as a further text keyword and generates a new face image. You can continue to arrange the image as much as you want.
 
-@inproceedings{liu2015faceattributes,
-  title = {Deep Learning Face Attributes in the Wild},
-  author = {Liu, Ziwei and Luo, Ping and Wang, Xiaogang and Tang, Xiaoou},
-  booktitle = {Proceedings of International Conference on Computer Vision (ICCV)},
-  month = {December},
-  year = {2015} 
-
 Demo Presentation Slide
 ![Demo presentation](./images/presentation1.png "Demo presentation")
 
