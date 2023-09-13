@@ -1,11 +1,13 @@
 README last update 2023.Sep.13
 # Documentation of App "AIdentikit" 
 ### The app can generate face images from text inputs describing the face features.
-This "Aidentitykit", first, selects the best-fit face image with input text keywords from the big database of the "CelebA dataset" (https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The CelebA dataset contains ~200K face images of celebrities in the world. 
-Then, Aidentitykit arranges the picked-up face image with a feature that is input as a further text keyword and generates a new face image. You can continue to arrange the image as much as you want.
+This "Aidentitykit", first, selects the best-fit face image with input text keywords from the big database of the "CelebA dataset" (https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The CelebA dataset contains ~200K face images of celebrities in the world. Then, Aidentitykit arranges the picked-up face image with a feature that is input as a further text keyword and generates a new face image. You can continue to arrange the image as much as you want. 
+The app is based on Python codes, implementing "StyleCLIP" model with API, Streamlit, and Github repo folders. 
 
 Demo Presentation Slide
 ![Demo presentation](./images/presentation1.png "Demo presentation")
+### TEAM members
+Shiori Miwa (Team manager), Lucas Kawasaki, Koga Takahashi, and Kanae Komaki
 
 Webpage(Home)
 ![app image](./images/app_image1.png "app front page")
